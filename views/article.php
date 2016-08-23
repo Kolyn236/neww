@@ -6,14 +6,19 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
-    <body>
+    <body class="pic">
+         <div class="container">
+              <div class="blog-header">
+                <h1 class="blog-title">Интересная информация</h1>
+                <p class="lead blog-description">Моя стажировочная практика с Bootstrap.</p>
+             </div>
+        </div>
         <div class="container">
-            <h1>Мой первый блог</h1>
-            <div class="article">
+            
                 <h3>Заголовок<?=$article['title']?></h3>
                 <em>Опубликовано:<?=$article['date']?></em>
                     <p><?=$article['content']?></p>
-            </div>
+        
            
             <footer>
                 <p>Мой первый блог

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
          <link rel="stylesheet" href="blog.css">
+        <link rel="stylesheet" href="option.css">
     </head>
       <body class="pic">
           <div class="blog-masthead">
@@ -21,20 +22,26 @@
                 <h1 class="blog-title">Интересная информация</h1>
                 <p class="lead blog-description">Моя стажировочная практика с Bootstrap.</p>
                         <h3><?php foreach($articles as $a): ?></h3>
-                            <div>
-                                <h2 class="blog-post-title">
+                            <div class="container">
+                                 <blockquote class="quote-box">
+                                     <p class="quotation-mark">
                                     <a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a>
-                                </h2>
+                                     </p>
                                 
-                                 <p class="blog-post-meta"><em>Дата публикации: <?=$a['date']?></em></p>
+                                <p class="blog-post-bottom pull-left">
+                                   Дата публикации: <?=$a['date']?></p>
                                     
-                                <blockquote>
-                                        <p><?=$a['content']?></p>
+                             
+                                        <p class="blog-post-bottom pull-left"><?=$a['content']?></p>
+                                     <p class="blog-post-bottom pull-right">
+                                          <span class="badge quote-badge">896</span>  ❤
+                                        </p>
                                 </blockquote>
 
                             </div>
                             <?php endforeach ?>
                     </div>
+            
 
     
                
@@ -54,6 +61,25 @@
             <h5 align="right"><a href="admin" >Панель администратора</a></h5>
                 
         </div>
+          <div class="container">
+    <blockquote class="quote-box">
+      <p class="quotation-mark">
+       <a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a>
+      </p>
+      <p class="quote-text">
+         
+      </p>
+      <hr>
+      <div class="blog-post-actions">
+        <p class="blog-post-bottom pull-left">
+          Abraham Lincoln
+        </p>
+        <p class="blog-post-bottom pull-right">
+          <span class="badge quote-badge">896</span>  ❤
+        </p>
+      </div>
+    </blockquote>
+</div>
  </body>
 
 
