@@ -1,0 +1,15 @@
+footer {
+    text-align: center;
+}
+
+.article {
+    text-align: center;
+    margin-top: 50px;
+}
+.admin-table{
+    width: 100%;
+}
+
+.pic{
+background-image: url('pictures/background.jpg')
+}
