@@ -61,25 +61,7 @@
             <h5 align="right"><a href="admin" >Панель администратора</a></h5>
                 
         </div>
-          <div class="container">
-    <blockquote class="quote-box">
-      <p class="quotation-mark">
-       <a href="article.php?id=<?=$a['id']?>"><?=$a['title']?></a>
-      </p>
-      <p class="quote-text">
-         
-      </p>
-      <hr>
-      <div class="blog-post-actions">
-        <p class="blog-post-bottom pull-left">
-          Abraham Lincoln
-        </p>
-        <p class="blog-post-bottom pull-right">
-          <span class="badge quote-badge">896</span>  ❤
-        </p>
-      </div>
-    </blockquote>
-</div>
+          
  </body>
 
 

@@ -37,7 +37,7 @@
                         <input type="submit" value="Сохранить" class="btn">
                     </form>
                 </div>
-              <div class="container">
+              <div class="container-fluid">
 	<div class="row">
 		<h3>Status Upload Snipp</h3>
 	</div>
@@ -48,7 +48,9 @@
     						<div class="widget-area no-padding blank">
 								<div class="status-upload">
 									<form>
-										<textarea placeholder="Пиши здесь" ></textarea>
+										<textarea placeholder="Пиши здесь" input type="text" name="title" value="<?=$article['title']?>" class="form-item" autofocus required ></textarea>
+                                        
+                                        
 										
 										<button type="submit" class="btn btn-success green"><i class="fa fa-share"></i> Share</button>
 									</form>
